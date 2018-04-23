@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddFoodTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="drg-jO-fQW">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="aoP-Ty-vnu"/>
+                            <constraint firstAttribute="height" constant="50" id="i94-od-nJN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-eF-MS7">
+                        <rect key="frame" x="214" y="19" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4bP-Bh-TSf"/>
+                            <constraint firstAttribute="height" constant="20" id="Itb-wB-5OR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEQ-Fx-N5b">
+                        <rect key="frame" x="281" y="17" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Qdy-xk-uHM"/>
+                            <constraint firstAttribute="height" constant="25" id="gse-dz-Gwy"/>
+                        </constraints>
+                        <state key="normal" image="ic_pub_pick_food.png"/>
+                        <connections>
+                            <action selector="deleteFoodAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="83M-CV-EcK"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXt-aU-Y7i">
+                        <rect key="frame" x="65" y="8" width="160" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="tDN-8z-AqA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7do-i5-iA6">
+                        <rect key="frame" x="65" y="33" width="163" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="mRr-uV-pN2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DAz-eF-MS7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="1jx-gd-aHA"/>
+                    <constraint firstItem="mEQ-Fx-N5b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="7jG-fO-XwE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mEQ-Fx-N5b" secondAttribute="trailing" constant="6" id="HUt-uw-njB"/>
+                    <constraint firstItem="mEQ-Fx-N5b" firstAttribute="leading" secondItem="7do-i5-iA6" secondAttribute="trailing" constant="53" id="KIb-Q6-Zr9"/>
+                    <constraint firstItem="drg-jO-fQW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="MhI-Tm-vPN"/>
+                    <constraint firstItem="drg-jO-fQW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="Mzm-Ta-SpG"/>
+                    <constraint firstItem="7do-i5-iA6" firstAttribute="leading" secondItem="drg-jO-fQW" secondAttribute="trailing" constant="10" id="PVK-uy-wky"/>
+                    <constraint firstItem="nXt-aU-Y7i" firstAttribute="leading" secondItem="drg-jO-fQW" secondAttribute="trailing" constant="10" id="R12-mS-E90"/>
+                    <constraint firstItem="7do-i5-iA6" firstAttribute="top" secondItem="nXt-aU-Y7i" secondAttribute="bottom" constant="3" id="WDg-dn-JOE"/>
+                    <constraint firstItem="mEQ-Fx-N5b" firstAttribute="leading" secondItem="nXt-aU-Y7i" secondAttribute="trailing" constant="56" id="nfO-5u-uGx"/>
+                    <constraint firstItem="nXt-aU-Y7i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="nyA-zx-NSO"/>
+                    <constraint firstItem="mEQ-Fx-N5b" firstAttribute="leading" secondItem="DAz-eF-MS7" secondAttribute="trailing" constant="7" id="yzr-5C-fc9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="choose" destination="mEQ-Fx-N5b" id="pNM-lY-r9M"/>
+                <outlet property="foodColaryLabel" destination="DAz-eF-MS7" id="sqa-Jn-m6n"/>
+                <outlet property="foodImageView" destination="drg-jO-fQW" id="P1Z-j9-CXO"/>
+                <outlet property="foodNameLabel" destination="nXt-aU-Y7i" id="oCF-hn-VI1"/>
+                <outlet property="foodWeightLabel" destination="7do-i5-iA6" id="BIm-hb-Hsm"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_pub_pick_food.png" width="25" height="25"/>
+    </resources>
+</document>

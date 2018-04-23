@@ -1,0 +1,33 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a1200e00-dde6-c747-9908-e6b5657d9540++5970",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a1200e00-dde6-c747-9908-e6b5657d9540++5970" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a1200e00-dde6-c747-9908-e6b5657d9540++5970" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "95DA29CC-41F3-4C36-BCBF-8DF1D8750433",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+<<<<<<< .mine
+    "a1200e00-dde6-c747-9908-e6b5657d9540++5970" : "Product\/"
+=======
+    "a1200e00-dde6-c747-9908-e6b5657d9540++5970" : "Product%E7%AC%AC%E4%B8%89%E6%9C%9F2\/"
+>>>>>>> .r40
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Product",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Product.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+<<<<<<< .mine
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/172.16.1.20\/svn\/IOS-APP",
+=======
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/172.16.1.20\/svn\/iOS-APP",
+>>>>>>> .r40
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a1200e00-dde6-c747-9908-e6b5657d9540++5970"
+    }
+  ]
+}

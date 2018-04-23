@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NutritionFoodCell" id="kqZ-X2-UEu" customClass="NutritionFoodCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kqZ-X2-UEu" id="6xA-8W-BIl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7E-ST-sXR">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="lJk-VS-Iji"/>
+                            <constraint firstAttribute="width" constant="50" id="pDL-nK-zZD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3E-1w-geW">
+                        <rect key="frame" x="210" y="19" width="64" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="WTo-8E-n8m"/>
+                            <constraint firstAttribute="height" constant="20" id="tNc-iT-Nz2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WTo-8E-n8m"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iI1-dP-vE6">
+                        <rect key="frame" x="281" y="17" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="aCD-Xn-7gJ"/>
+                            <constraint firstAttribute="width" constant="25" id="eaT-to-iLh"/>
+                        </constraints>
+                        <state key="normal" image="ic_pub_pick_food.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5p-0P-cEf">
+                        <rect key="frame" x="65" y="8" width="140" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="29E-3F-a1I"/>
+                            <constraint firstAttribute="width" constant="140" id="sPM-tF-j63"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fi-q2-ZiO">
+                        <rect key="frame" x="65" y="33" width="140" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="mlC-Rr-qkW"/>
+                            <constraint firstAttribute="height" constant="18" id="uPi-PT-Xwr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="iI1-dP-vE6" secondAttribute="trailing" constant="6" id="0XT-Un-zav"/>
+                    <constraint firstItem="X5p-0P-cEf" firstAttribute="leading" secondItem="Y7E-ST-sXR" secondAttribute="trailing" constant="10" id="46Y-c0-D72"/>
+                    <constraint firstItem="2Fi-q2-ZiO" firstAttribute="leading" secondItem="Y7E-ST-sXR" secondAttribute="trailing" constant="10" id="5hO-5F-LkA"/>
+                    <constraint firstItem="iI1-dP-vE6" firstAttribute="top" secondItem="6xA-8W-BIl" secondAttribute="topMargin" constant="9" id="9ja-yQ-hg1"/>
+                    <constraint firstItem="D3E-1w-geW" firstAttribute="top" secondItem="6xA-8W-BIl" secondAttribute="topMargin" constant="11" id="BdW-he-2Lh"/>
+                    <constraint firstItem="iI1-dP-vE6" firstAttribute="leading" secondItem="2Fi-q2-ZiO" secondAttribute="trailing" constant="53" id="Rgn-VV-GJE"/>
+                    <constraint firstItem="iI1-dP-vE6" firstAttribute="leading" secondItem="D3E-1w-geW" secondAttribute="trailing" constant="7" id="ZPQ-aw-ZQa"/>
+                    <constraint firstItem="D3E-1w-geW" firstAttribute="leading" secondItem="X5p-0P-cEf" secondAttribute="trailing" constant="5" id="gSZ-ao-oqP"/>
+                    <constraint firstItem="iI1-dP-vE6" firstAttribute="leading" secondItem="X5p-0P-cEf" secondAttribute="trailing" constant="56" id="hXQ-qo-Wos"/>
+                    <constraint firstItem="X5p-0P-cEf" firstAttribute="top" secondItem="6xA-8W-BIl" secondAttribute="topMargin" id="l4r-Sg-wxx"/>
+                    <constraint firstItem="2Fi-q2-ZiO" firstAttribute="top" secondItem="X5p-0P-cEf" secondAttribute="bottom" constant="3" id="mBM-G0-J9f"/>
+                    <constraint firstItem="Y7E-ST-sXR" firstAttribute="top" secondItem="6xA-8W-BIl" secondAttribute="topMargin" constant="-3" id="qFq-Dm-twB"/>
+                    <constraint firstItem="Y7E-ST-sXR" firstAttribute="leading" secondItem="6xA-8W-BIl" secondAttribute="leadingMargin" constant="-3" id="xNm-gK-qbu"/>
+                    <constraint firstItem="D3E-1w-geW" firstAttribute="leading" secondItem="2Fi-q2-ZiO" secondAttribute="trailing" constant="5" id="yjO-cU-XNm"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Rgn-VV-GJE"/>
+                        <exclude reference="hXQ-qo-Wos"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDelete" destination="iI1-dP-vE6" id="kQ1-1Q-qJX"/>
+                <outlet property="imgFood" destination="Y7E-ST-sXR" id="vKk-pz-DGt"/>
+                <outlet property="lblFood" destination="X5p-0P-cEf" id="l81-Mn-Mfy"/>
+                <outlet property="lblHeat" destination="D3E-1w-geW" id="0tx-Sm-0dp"/>
+                <outlet property="lblWeight" destination="2Fi-q2-ZiO" id="IeP-nx-8H5"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_pub_pick_food.png" width="25" height="25"/>
+    </resources>
+</document>

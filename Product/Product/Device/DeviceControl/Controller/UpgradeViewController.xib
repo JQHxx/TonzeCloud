@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" customClass="UpgradeViewController">
+            <connections>
+                <outlet property="deviceIV" destination="F5f-3f-WWa" id="YxC-eL-RZ7"/>
+                <outlet property="nowLabel" destination="2gF-hg-Ymb" id="Ri2-Pb-g8i"/>
+                <outlet property="updataButton" destination="ibL-9e-QEG" id="m6Y-B5-gL4"/>
+                <outlet property="versionLabel" destination="bMk-1n-Cjl" id="eU5-2q-GcC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-9e-QEG">
+                    <rect key="frame" x="20" y="493" width="280" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.7803921568627451" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="HAk-7z-Ef7"/>
+                    </constraints>
+                    <state key="normal" title="检查更新">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chackVersion:" destination="-1" eventType="touchUpInside" id="ZWb-0Z-jMY"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add云炖锅.png" translatesAutoresizingMaskIntoConstraints="NO" id="F5f-3f-WWa">
+                    <rect key="frame" x="104" y="141" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="8hz-pJ-Fc7"/>
+                        <constraint firstAttribute="height" constant="110" id="GKp-Pc-9tG"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6Q-CW-wi6" userLabel="VersionView">
+                    <rect key="frame" x="-2" y="301" width="322" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-1n-Cjl">
+                            <rect key="frame" x="239" y="13" width="61" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="LSP-Gn-aPd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.32156862745098036" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前固件版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-hg-Ymb">
+                            <rect key="frame" x="20" y="13" width="211" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="AwN-a6-QIk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.32156862745098036" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2gF-hg-Ymb" secondAttribute="trailing" constant="91" id="AzH-Ru-XjW"/>
+                        <constraint firstAttribute="trailing" secondItem="bMk-1n-Cjl" secondAttribute="trailing" constant="22" id="WoE-QJ-vfA"/>
+                        <constraint firstItem="bMk-1n-Cjl" firstAttribute="leading" secondItem="2gF-hg-Ymb" secondAttribute="trailing" constant="8" id="YPD-Sn-BKG"/>
+                        <constraint firstItem="2gF-hg-Ymb" firstAttribute="centerY" secondItem="N6Q-CW-wi6" secondAttribute="centerY" id="hHC-xP-56G"/>
+                        <constraint firstItem="2gF-hg-Ymb" firstAttribute="leading" secondItem="N6Q-CW-wi6" secondAttribute="leading" constant="20" id="hrw-Wn-1bI"/>
+                        <constraint firstAttribute="height" constant="45" id="qm0-2o-Lcu"/>
+                        <constraint firstItem="bMk-1n-Cjl" firstAttribute="centerY" secondItem="N6Q-CW-wi6" secondAttribute="centerY" id="sQ6-Dd-cYt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="N6Q-CW-wi6" secondAttribute="trailing" id="7qZ-OO-9kv"/>
+                <constraint firstItem="ibL-9e-QEG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="85Z-x1-uTF"/>
+                <constraint firstItem="F5f-3f-WWa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="141" id="AHG-bn-INw"/>
+                <constraint firstItem="F5f-3f-WWa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-1" id="Ca8-c3-yiT"/>
+                <constraint firstItem="N6Q-CW-wi6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-2" id="aGh-eJ-aPT"/>
+                <constraint firstItem="ibL-9e-QEG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="7:8" id="jiU-Ty-amx"/>
+                <constraint firstAttribute="bottom" secondItem="ibL-9e-QEG" secondAttribute="bottom" constant="30" id="tF8-BT-Tmf"/>
+                <constraint firstItem="N6Q-CW-wi6" firstAttribute="top" secondItem="F5f-3f-WWa" secondAttribute="bottom" constant="50" id="zz0-Vm-nfd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="300" y="196"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add云炖锅.png" width="123" height="123"/>
+    </resources>
+</document>

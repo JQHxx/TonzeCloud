@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRcodeTimeOutViewController">
+            <connections>
+                <outlet property="_failedLabel" destination="Cz5-zO-A0r" id="H2u-eF-IIF"/>
+                <outlet property="_tipsLabel" destination="itR-5J-G3e" id="y86-YE-swO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz5-zO-A0r">
+                    <rect key="frame" x="40" y="364" width="295" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="tU7-bF-W0Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该二维码已失效，请重新向管理员获取" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="itR-5J-G3e">
+                    <rect key="frame" x="40" y="399" width="295" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="QUg-16-pil"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二维码失效.png" translatesAutoresizingMaskIntoConstraints="NO" id="6m3-YV-lkq">
+                    <rect key="frame" x="118" y="214" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="C8M-Ka-t9a"/>
+                        <constraint firstAttribute="width" constant="140" id="Qf9-4f-MJ0"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TW-RC-y0L">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llt-iK-nnn">
+                            <rect key="frame" x="0.0" y="30" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="7Ss-f5-XSf"/>
+                                <constraint firstAttribute="width" constant="44" id="BT4-4y-xc7"/>
+                            </constraints>
+                            <state key="normal" image="back.png"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="Dzm-n6-TSG"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二维码分享" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi4-4V-eOd">
+                            <rect key="frame" x="138" y="41" width="100" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="hvF-Sr-CKI"/>
+                                <constraint firstAttribute="height" constant="21" id="opp-fB-VVO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.51372549020000002" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Gi4-4V-eOd" firstAttribute="top" secondItem="2TW-RC-y0L" secondAttribute="top" constant="41" id="0Jj-tS-EBh"/>
+                        <constraint firstItem="llt-iK-nnn" firstAttribute="top" secondItem="2TW-RC-y0L" secondAttribute="top" constant="30" id="TX9-Zy-ciZ"/>
+                        <constraint firstAttribute="height" constant="74" id="W9O-Q3-re8"/>
+                        <constraint firstItem="llt-iK-nnn" firstAttribute="leading" secondItem="2TW-RC-y0L" secondAttribute="leading" id="mYS-MB-12E"/>
+                        <constraint firstItem="Gi4-4V-eOd" firstAttribute="centerX" secondItem="2TW-RC-y0L" secondAttribute="centerX" id="zlf-ew-FdY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="itR-5J-G3e" secondAttribute="trailing" constant="40" id="D6C-8a-yob"/>
+                <constraint firstItem="6m3-YV-lkq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HgD-z2-PEv"/>
+                <constraint firstItem="Cz5-zO-A0r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Wok-3T-zZY"/>
+                <constraint firstItem="2TW-RC-y0L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yzk-nN-p6B"/>
+                <constraint firstAttribute="trailing" secondItem="2TW-RC-y0L" secondAttribute="trailing" id="aIt-c2-n0d"/>
+                <constraint firstItem="Cz5-zO-A0r" firstAttribute="top" secondItem="6m3-YV-lkq" secondAttribute="bottom" constant="10" id="f2b-ei-IQk"/>
+                <constraint firstAttribute="trailing" secondItem="Cz5-zO-A0r" secondAttribute="trailing" constant="40" id="fQL-cl-pZq"/>
+                <constraint firstItem="itR-5J-G3e" firstAttribute="top" secondItem="Cz5-zO-A0r" secondAttribute="bottom" constant="-6" id="fRZ-Rs-0N5"/>
+                <constraint firstItem="itR-5J-G3e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="jfz-me-y53"/>
+                <constraint firstItem="6m3-YV-lkq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="pjl-id-Kcs"/>
+                <constraint firstItem="2TW-RC-y0L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wvw-n4-aCK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="6" height="9"/>
+        <image name="二维码失效.png" width="130" height="130"/>
+    </resources>
+</document>

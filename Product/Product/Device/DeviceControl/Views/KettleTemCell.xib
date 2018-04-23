@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="KettleTemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tea_红茶.png" translatesAutoresizingMaskIntoConstraints="NO" id="bSX-4P-7AP">
+                        <rect key="frame" x="8" y="8" width="48" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="HGk-If-t09"/>
+                            <constraint firstAttribute="height" constant="45" id="hdW-iJ-7hg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绿茶婊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0V-Nx-Tfc">
+                        <rect key="frame" x="71" y="24" width="104" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="9Sd-a7-GVC"/>
+                            <constraint firstAttribute="width" constant="104" id="TZO-2C-UMl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLn-CQ-ZDH">
+                        <rect key="frame" x="275" y="25" width="37" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GCJ-dM-Yen"/>
+                            <constraint firstAttribute="width" constant="37" id="piT-MC-Du3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x0V-Nx-Tfc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="0et-7p-QOp"/>
+                    <constraint firstItem="dLn-CQ-ZDH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="Jdk-sb-5fO"/>
+                    <constraint firstItem="dLn-CQ-ZDH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Oda-Xm-468"/>
+                    <constraint firstItem="x0V-Nx-Tfc" firstAttribute="leading" secondItem="bSX-4P-7AP" secondAttribute="trailing" constant="15" id="TPl-Rv-AGo"/>
+                    <constraint firstItem="bSX-4P-7AP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="WpL-Ca-1ey"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dLn-CQ-ZDH" secondAttribute="bottom" constant="16" id="asE-ur-BFQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bSX-4P-7AP" secondAttribute="bottom" constant="9" id="sgf-jl-Hcy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="x0V-Nx-Tfc" secondAttribute="bottom" constant="16" id="uw2-il-sDR"/>
+                    <constraint firstItem="bSX-4P-7AP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="w3t-bh-yuQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="teaImgView" destination="bSX-4P-7AP" id="Aen-Ik-pNj"/>
+                <outlet property="temName" destination="x0V-Nx-Tfc" id="ccf-qR-VAp"/>
+                <outlet property="tempLB" destination="dLn-CQ-ZDH" id="B17-jd-03F"/>
+            </connections>
+            <point key="canvasLocation" x="468" y="269.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_tea_红茶.png" width="120" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpgradeSuccessViewController">
+            <connections>
+                <outlet property="deviceIV" destination="rIx-mi-pPG" id="WUc-2c-y2B"/>
+                <outlet property="doneButton" destination="n3Z-RG-hHC" id="cKi-tN-e99"/>
+                <outlet property="newestLabel" destination="XdP-wi-34z" id="FnB-RP-9bo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add云炖锅.png" translatesAutoresizingMaskIntoConstraints="NO" id="rIx-mi-pPG">
+                    <rect key="frame" x="105" y="189" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="AK6-1E-B0I"/>
+                        <constraint firstAttribute="height" constant="110" id="Pcl-pB-FKP"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3Z-RG-hHC">
+                    <rect key="frame" x="20" y="493" width="280" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.78039215689999997" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="dsJ-gv-nvS"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="Fjg-2C-GHw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前已经是最新版本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdP-wi-34z">
+                    <rect key="frame" x="20" y="316" width="280" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="xrK-Az-ANR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rIx-mi-pPG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-40" id="4Gd-AQ-LNx"/>
+                <constraint firstItem="rIx-mi-pPG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H7n-mj-DfN"/>
+                <constraint firstItem="XdP-wi-34z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HlH-IC-yBP"/>
+                <constraint firstItem="XdP-wi-34z" firstAttribute="width" secondItem="n3Z-RG-hHC" secondAttribute="width" id="Qt8-na-xOH"/>
+                <constraint firstItem="XdP-wi-34z" firstAttribute="top" secondItem="rIx-mi-pPG" secondAttribute="bottom" constant="17" id="TNa-2w-PUj"/>
+                <constraint firstItem="n3Z-RG-hHC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="7:8" id="V5N-tf-54L"/>
+                <constraint firstAttribute="bottom" secondItem="n3Z-RG-hHC" secondAttribute="bottom" constant="30" id="mX1-MU-Pv9"/>
+                <constraint firstItem="n3Z-RG-hHC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qFH-f5-SNC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add云炖锅.png" width="123" height="123"/>
+    </resources>
+</document>
